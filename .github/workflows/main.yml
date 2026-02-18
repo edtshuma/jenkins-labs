@@ -1,7 +1,7 @@
 #main.yml
 #This workflow will install Python dependencies, lint using Black, run tests using Pytest 
-#and Deploy the FastAPI app to Heroku
-name: fastapi-github-actions-test
+#and push the FastAPI app to DockerHub
+name: fastapi
 
 on: 
   #Trigger the workflow on a push event to the master branch only
@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.14 # Modify python version HERE
+        python-version: 3.14 
 
     #Task for installing dependencies, multi-line command
     - name: Install dependencies
