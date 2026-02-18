@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest 
     #steps: defines a series of tasks executed by the Job
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
 
     #Task for setting up Python 3.8 using actions/setup-python@v2 Github action
     - name: Set up Python 3.8
